@@ -1,4 +1,3 @@
-
 <p align="center"><a href="https://sonali.netlify.app/"><img src="./assets/wedding.gif" width="150px" height="150px"/></a></p>
 <h1 align="center"><a href="https://sonali.netlify.app/">Wedding Invitation</a> :ring: <br> <br> SAVE THE DATE: NOV 29, 2020 <br> <a href="https://sonali.netlify.app/">sonali.netlify.app</a></h1>
 
@@ -25,50 +24,46 @@ inviting you and your family to elder sister's wedding to be held on **29th Nove
 - See the [Tweet](https://twitter.com/Vinit_Shahdeo/status/1328570280705482752)
 
 ```js
-
-const newCouple = 'Sonali & Gagan';
+const newCouple = "Sonali & Gagan";
 
 // Nov 29, 2020
 const weddingDate = new Date(2020, 11, 29);
 
 // Wedding venue: https://goo.gl/maps/5z5xX2hTYzU8VGEJ9
-const weddingVenue = new Location('Ashirwad Garden, Ranchi');
+const weddingVenue = new Location("Ashirwad Garden, Ranchi");
 
-(function() {
-    newCouple.willTieKnot(weddingDate);
+(function () {
+  newCouple.willTieKnot(weddingDate);
 
-    // your presence is requested
-    (new Wedding()).acceptInvitation(
-        window.open('https://sonali.netlify.app/')
-    );
+  // your presence is requested
+  new Wedding().acceptInvitation(window.open("https://sonali.netlify.app/"));
 })();
-
-
 ```
 
-## Are you or your loved ones a *bride-to-be* or *groom-to-be*? 
+## Are you or your loved ones a _bride-to-be_ or _groom-to-be_?
+
 > Feel free to use this template to build your wedding website!
 
 To reuse this, follow the steps:
 
-- *Replace the date in [script.js](https://github.com/vinitshahdeo/Wedding-Invitation/blob/master/js/script.js#L29) to have a timer running for your big day!*
+- _Replace the date in [script.js](https://github.com/vinitshahdeo/Wedding-Invitation/blob/master/js/script.js#L29) to have a timer running for your big day!_
 
 ```js
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 29, 2020 00:00:00").getTime();
 ```
 
-- *If you wish to change the track which plays on click, edit the `src` in [index.html](https://github.com/vinitshahdeo/Wedding-Invitation/blob/760c4aa437115fc365f5cb86a4b428b0e292b5ba/index.html#L69)*
+- _If you wish to change the track which plays on click, edit the `src` in [index.html](https://github.com/vinitshahdeo/Wedding-Invitation/blob/760c4aa437115fc365f5cb86a4b428b0e292b5ba/index.html#L69)_
 
 ```html
 <div class="music">
-   <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio> 
+  <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
 </div>
 ```
 
 > <sup>Despite so many new Bollywood and English song options, I prefered to use two-decade-old song, **[Din Shagna Da](https://youtu.be/X0MDALpV29s)**! Ever attended a North Indian Wedding? As soon as the DJ plays [Din Shagna Da](https://youtu.be/Mj4eK5YViCs) song, it means that the much-awaited moment is here and the bride is all set to put her first foot forward to the wedding venue under a breathtaking phoolon ki chaadar. Let's keep the sky-high status of this song untouched! When the website is backed up with a soul-stirring track, the feeling becomes absolutely surreal. **Choose a heart-touching track!** :musical_note: :heart: </sup>
 
-## शुभ विवाह 🎉  ~ Hindi version of this website 👇
+## शुभ विवाह 🎉 ~ Hindi version of this website 👇
 
 [![Wedding Website](https://github-readme-stats.vercel.app/api/pin/?username=vinitshahdeo&repo=wedding-website)](https://github.com/vinitshahdeo/wedding-website/)
 
