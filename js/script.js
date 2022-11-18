@@ -1,5 +1,5 @@
 /**
- * @author Vinit Shahdeo <vinitshahdeo@gmail.com>
+ * @author Akhil Teja Marupilla
  */
 (function ($) {
   "use strict";
@@ -20,13 +20,17 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-$(document).on("click", function () {
+$(document).on("dblclick", function () {
   document.getElementById("my_audio").play();
-  console.log("Shaadi me zaroor aana");
+  console.log("Starting the music");
+});
+$(document).on("click", function () {
+  document.getElementById("my_audio").pause();
+  console.log("Stopping the music");
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 8, 2022 19:00:00").getTime();
+var countDownDate = new Date("Dec 08, 2022 19:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -97,15 +101,15 @@ var styles2 = [
   "font-size: 32px",
 ].join(";");
 
-console.log("\n\n%c SAVE THE DATE: 29th Nov, 2020!", styles);
+console.log("\n\n%c SAVE THE DATE: 8th Dec, 2022!", styles);
 
 console.log(
-  "%cYour presence is requested!%c\n\nRegards: Vinit Shahdeo",
+  "%cYour presence is requested!%c\n\nRegards: Venkateswara Rao Marupilla",
   styles1,
   styles2
 );
 
 console.log(
-  `%cShaadi me zaroor aana!\n\n`,
+  `%cPlease come to the wedding\n\n`,
   "color: yellow; background:tomato; font-size: 24pt; font-weight: bold"
 );
